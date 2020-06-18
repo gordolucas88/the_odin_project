@@ -1,0 +1,13 @@
+center {
+    display: block;
+    text-align: -webkit-center;
+    padding-top: 109px;
+}
+
+ul {
+    float: right;
+}
+
+li {
+    display: inline;
+}
