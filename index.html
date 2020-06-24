@@ -1,0 +1,51 @@
+<script>
+let computer
+let player
+
+
+function computerPlay() {
+    computer = Math.floor((Math.random() * 3) + 1);
+    if (computer == 1) {
+        computer = 'ROCK'
+    }
+    if (computer == 2) {
+        computer = 'PAPER'
+    }
+    if (computer == 3) {
+        computer = "SCISSOR"
+    }
+
+    return computer
+}
+function userInput(){
+player = window.prompt('Rock, Paper or Scissor ?');
+player = player.toUpperCase()
+}
+function game(Player1, Player2) {
+
+    if (this.Player1 == 'ROCK' && this.Player2 == 'ROCK')
+        return 0
+    if (this.Player1 == 'ROCK' && this.Player2 == 'PAPER')
+        return -1
+    if (this.Player1 == 'ROCK' && this.Player2 == 'SCISSOR')
+        return 1
+    if (this.Player1 == 'PAPER' && this.Player2 == 'PAPER')
+        return 0
+    if (this.Player1 == 'PAPER' && this.Player2 == 'ROCK')
+        return 1
+    if (this.Player1 == 'PAPER' && this.Player2 == 'SCISSOR')
+        return -1
+    if (this.Player1 == 'SCISSOR' && this.Player2 == 'SCISSOR')
+        return 0
+    if (this.Player1 == 'SCISSOR' && this.Player2 == 'PAPER')
+        return 1
+    if (this.Player1 == 'SCISSOR' && this.Player2 == 'ROCK')
+        return -1
+}
+
+console.log(computerPlay())
+
+
+console.log(player)
+
+</script>
